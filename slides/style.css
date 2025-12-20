@@ -46,11 +46,80 @@ p {
   color: var(--text-secondary);
 }
 
+/* === Lists === */
+ul, ol {
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+  text-align: left !important;
+}
+
 li {
   font-family: var(--font-mono);
   font-size: 0.85rem;
   color: var(--text-secondary);
   padding: 0.25rem 0;
+  display: list-item;
+  text-align: left !important;
+}
+
+/* 确保有序列表数字和内容不分离 */
+ol {
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+
+ol li {
+  padding-left: 0.5rem;
+}
+
+ol li::marker {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* 列表项内容保持在一行 */
+li > * {
+  display: inline;
+}
+
+li p {
+  display: inline;
+  margin: 0;
+}
+
+/* 嵌套列表 */
+li ul, li ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+  display: block;
+}
+
+li li {
+  font-size: 0.8rem;
+}
+
+/* 修复 section layout 中列表居中问题 */
+.slidev-layout ul,
+.slidev-layout ol {
+  text-align: left !important;
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slidev-layout li {
+  text-align: left !important;
+}
+
+/* Section layout 特殊处理 */
+.slidev-layout.slidev-layout-section ul,
+.slidev-layout.slidev-layout-section ol,
+[class*="layout-section"] ul,
+[class*="layout-section"] ol {
+  display: block !important;
+  text-align: left !important;
 }
 
 /* === Blockquote === */
