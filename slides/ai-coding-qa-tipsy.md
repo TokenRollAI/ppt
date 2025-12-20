@@ -20,7 +20,7 @@ record: false
 routerMode: hash
 ---
 
-# AI Coding QA
+# QA for Tipsy
 
 by DJJ
 
