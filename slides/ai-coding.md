@@ -22,11 +22,7 @@ routerMode: hash
 
 # AI Coding 分享
 
-探索 AI 辅助编程的最佳实践
-
-<div class="mt-3">
-  <span class="btn">Press Space →</span>
-</div>
+by DJJ
 
 <div style="position: absolute; bottom: 2rem; right: 3rem; font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-secondary);">
   ppt.tokenroll.ai
