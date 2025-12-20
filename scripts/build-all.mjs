@@ -44,6 +44,14 @@ if (fs.existsSync(pagesCssDir)) {
     copyDirRecursive(pagesCssDir, distCssDir);
 }
 
+// 复制 Icon 目录
+const iconDir = path.join(rootDir, 'Icon');
+const distIconDir = path.join(distDir, 'Icon');
+if (fs.existsSync(iconDir)) {
+    console.log('🎨 Copying icons...');
+    copyDirRecursive(iconDir, distIconDir);
+}
+
 // 3. 复制公共资源 (如果存在)
 const publicImagesDir = path.join(slidesDir, 'images');
 const distImagesDir = path.join(distDir, 'images');

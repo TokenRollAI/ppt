@@ -1,6 +1,7 @@
 ---
 theme: default
 title: 关于我 - DJJ
+favicon: /Icon/favicon.svg
 info: |
   ## About DJJ
   Department of Joke Justice

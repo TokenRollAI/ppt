@@ -1,6 +1,7 @@
 ---
 theme: default
 title: AI Coding Showcase
+favicon: /Icon/favicon.svg
 info: |
   ## AI Coding Showcase
   探索 AI 辅助编程的最佳实践
