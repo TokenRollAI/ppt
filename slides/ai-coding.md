@@ -1,9 +1,9 @@
 ---
 theme: default
-title: AI Coding Showcase
+title: AI Coding 分享
 favicon: /Icon/favicon.svg
 info: |
-  ## AI Coding Showcase
+  ## AI Coding 分享
   探索 AI 辅助编程的最佳实践
 
   在线查看: https://ppt.tokenroll.ai/ai-coding/
@@ -13,15 +13,14 @@ drawings:
 transition: slide-left
 mdc: true
 
-# 禁用不需要的功能
 presenter: false
 download: false
-exportFilename: ai-coding-showcase
+exportFilename: ai-coding
 record: false
 routerMode: hash
 ---
 
-# AI Coding Showcase
+# AI Coding 分享
 
 探索 AI 辅助编程的最佳实践
 
@@ -50,9 +49,9 @@ routerMode: hash
 
 # 基座模型
 
-> **_至少到 2025 年年底, 我们应该认识到: <span class="highlight">基础模型进步带来的收益是最大的</span>_**
+> ***至少到 2025 年年底, 我们应该认识到: <span class="highlight">基础模型进步带来的收益是最大的</span>***
 
-> **_在任何生产力场景下, 应该总是选择<span class="highlight">SOTA 模型</span>_**
+> ***在任何生产力场景下, 应该总是选择 <span class="highlight">SOTA 模型</span>***
 
 ---
 
@@ -119,8 +118,7 @@ layout: section
 
 **[gpt-5.2-codex](https://openai.com/zh-Hant/index/introducing-gpt-5-2-codex/)**
 
-- 修改准确
-- 调查充分
+- 修改准确, 调查充分
 - <span class="warning">耗时过长</span>
 - 非常适合修复 BUG
 
@@ -130,11 +128,9 @@ layout: section
 ### Google Gemini <sup>大善人</sup>
 
 **[Gemini 3.0 Pro](https://aistudio.google.com/models/gemini-3)**
-
 - 史上最佳对话模型
 
 **[Gemini 3.0 Flash](https://blog.google/products/gemini/gemini-3-flash/)**
-
 - 不知道 Google 是怎么做到的
 
 </div>
@@ -289,6 +285,16 @@ GUI Local, Fork VSCode 发行版
 
 ---
 
+# Commit Message 演示
+
+<div class="mt-2" style="text-align: center;">
+
+<img src="/images/commit-msg.gif" style="max-height: 400px; border: 1px solid var(--border-color);" />
+
+</div>
+
+---
+
 # CLI 工具
 
 > CLI 交互天生就有一种严肃性, 同时有最广泛的适用性
@@ -359,23 +365,26 @@ layout: section
 
 本质上都是注入到 Context 里的提示词
 
-<div class="mt-2">
+<div class="grid-2 mt-2">
+<div>
 
 ### 实现原理
 
 ```markdown
 <system-reminder>
-As you answer the user's questions, you can use the following context:
+As you answer the user's questions,
+you can use the following context:
 # claudeMd
-Codebase and user instructions are shown below...
+Codebase and user instructions...
 </system-reminder>
 ```
 
-### 如何使用
+</div>
+<div>
 
-- 使用 `/init` 初始化 Claude.md
-- 使用 `# content` 添加到 Claude.md
+<img src="/images/claude-md.png" style="max-height: 280px; border: 1px solid var(--border-color);" />
 
+</div>
 </div>
 
 ---
@@ -401,17 +410,20 @@ Always use xxx to do xxx
 {项目概况: 名称/技术栈/架构}
 
 ## 核心技术栈
-
 ## 项目架构
-
 ## 开发命令
-
 ## 关键配置
-
 ## 开发注意事项
 ```
 
 </div>
+</div>
+
+<div class="mt-2">
+
+- 使用 `/init` 初始化 Claude.md
+- 使用 `# content` 添加到 Claude.md
+
 </div>
 
 ---
@@ -424,12 +436,22 @@ Always use xxx to do xxx
 
 > 不是 "Chat More" 而是 **"先调查, 再规划, 再写代码"**
 
-### 使用 Plan 模式
+<div class="grid-2 mt-2">
+<div>
 
-- **Cursor**: 切换 Plan/Code 模式
-- **Claude Code**: `Shift + Tab` 切换 Plan 模式
+**Cursor**: 切换 Plan/Code 模式
 
-直到 AI 能够彻底理解你的需求, 并且给出了合理的方案
+<img src="/images/cursor-plan.png" style="max-height: 180px; border: 1px solid var(--border-color);" />
+
+</div>
+<div>
+
+**Claude Code**: `Shift + Tab` 切换
+
+<img src="/images/cc-plan.png" style="max-height: 180px; border: 1px solid var(--border-color);" />
+
+</div>
+</div>
 
 </div>
 
@@ -456,7 +478,8 @@ Always use xxx to do xxx
 
 > 做选择题, 总是要比做填空题爽
 
-<div class="mt-2">
+<div class="grid-2 mt-2">
+<div>
 
 Claude Code 2.0.21 引入 `interactive question tool`
 
@@ -464,11 +487,17 @@ AI 可以主动向你发问, 你可以做选项回复
 
 ### 触发条件
 
-- 在 **Plan 模式** 下更主动调用 `AskUserQuestion`
+- 在 **Plan 模式** 下更主动调用
 - 让用户进行选择而不是输入
 
 对于懒得打字的朋友们来说, 简直是福音
 
+</div>
+<div>
+
+<img src="/images/option-coding.gif" style="max-height: 300px; border: 1px solid var(--border-color);" />
+
+</div>
 </div>
 
 ---
@@ -477,7 +506,8 @@ AI 可以主动向你发问, 你可以做选项回复
 
 > 文档系统在 AI Coding 中只会越来越重要
 
-<div class="mt-2">
+<div class="grid-2 mt-2">
+<div>
 
 LLM 没有长期记忆, 全部依赖于 Context
 
@@ -490,6 +520,12 @@ LLM 没有长期记忆, 全部依赖于 Context
 - [cc-plugin](https://github.com/TokenRollAI/cc-plugin): AI 自动生成文档
 
 </div>
+<div>
+
+<img src="/images/llmdoc.png" style="max-height: 300px; border: 1px solid var(--border-color);" />
+
+</div>
+</div>
 
 ---
 layout: section
@@ -498,6 +534,16 @@ layout: section
 # MCP
 
 Model Context Protocol
+
+---
+
+# MCP 演示
+
+<div class="mt-2" style="text-align: center;">
+
+<img src="/images/mcp-demo.gif" style="max-height: 450px; border: 1px solid var(--border-color);" />
+
+</div>
 
 ---
 
@@ -557,7 +603,8 @@ Model Context Protocol
 
 > 使用 Tools 是有代价的
 
-<div class="mt-2">
+<div class="grid-2 mt-2">
+<div>
 
 ### MCP 的代价
 
@@ -569,7 +616,25 @@ Model Context Protocol
 
 <span class="highlight">只使用 0-2 个 MCP, 不需要时及时关掉</span>
 
-唯一推荐: 在支持多 Agent 的工具中, 为每个 Agent 开启一个 MCP
+</div>
+<div>
+
+<img src="/images/mcp-cost.png" style="max-height: 280px; border: 1px solid var(--border-color);" />
+
+</div>
+</div>
+
+---
+
+# MCP 最佳实践
+
+> 唯一推荐: 在支持多 Agent 的工具中, 为每个 Agent 开启一个 MCP
+
+<div class="mt-2" style="text-align: center;">
+
+<img src="/images/cherry-mcp.png" style="max-height: 380px; border: 1px solid var(--border-color);" />
+
+<p class="text-sm">在 Cherry Studio 中使用 MCP, 让一个 Agent 做一件事情</p>
 
 </div>
 

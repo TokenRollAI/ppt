@@ -55,7 +55,6 @@ DJJ 并不是一个易于理解的名字
 
 说烂笑话必遭审判
 
-<span class="tag-gold">推荐解读</span>
 
 </div>
 <div>
@@ -64,7 +63,6 @@ DJJ 并不是一个易于理解的名字
 
 一种重要的化工原料
 
-<span class="tag">备选解读</span>
 
 </div>
 </div>
