@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=JetBrains+Mono:wght@400&family=Noto+Serif+SC:wght@400;600&display=swap');
+
+:root {
+  --bg: #EBEAE3;
+  --text: #000000;
+  --text-muted: #8D8C88;
+  --accent: #F4BB40;
+  --font-serif: 'Crimson Pro', 'Noto Serif SC', Georgia, serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font-serif);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 560px;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: -1px;
+  margin-bottom: 2.5rem;
+}
+
+.slides-list { list-style: none; }
+
+.slide-item {
+  border-bottom: 1px solid var(--text);
+}
+
+.slide-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.15s;
+}
+
+.slide-link:hover {
+  padding-left: 0.75rem;
+  background: var(--accent);
+}
+
+.slide-title {
+  font-size: 1.35rem;
+}
+
+.slide-meta {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.slide-link:hover .slide-meta { color: var(--text); }
+
+.contact {
+  margin-top: 2rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.contact a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: var(--text);
+}

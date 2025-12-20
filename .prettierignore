@@ -1,0 +1,2 @@
+# Ignore Slidev markdown files - frontmatter gets broken by formatting
+slides/*.md

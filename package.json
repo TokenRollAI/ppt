@@ -1,0 +1,24 @@
+{
+  "name": "ai-coding-showcase",
+  "version": "1.0.0",
+  "description": "AI Coding Showcase & Knowledge Platform - Multi-slide presentation platform",
+  "type": "module",
+  "scripts": {
+    "dev": "slidev slides/ai-coding.md --open",
+    "dev:select": "node scripts/dev.mjs",
+    "build": "node scripts/build-all.mjs",
+    "preview": "npx serve dist"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.11.1",
+    "@slidev/theme-default": "latest",
+    "@unocss/reset": "^66.5.10",
+    "unocss": "^66.5.10"
+  },
+  "devDependencies": {
+    "serve": "^14.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

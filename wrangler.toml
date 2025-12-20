@@ -1,0 +1,5 @@
+{
+  "$schema": "https://json.schemastore.org/wrangler.json",
+  "name": "ppt-tokenroll",
+  "pages_build_output_dir": "./dist"
+}

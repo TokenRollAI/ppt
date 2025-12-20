@@ -1,0 +1,195 @@
+/**
+ * DJJ Showcase Theme
+ * Single source of truth for all styles
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap');
+
+/* === CSS Variables === */
+:root {
+  --bg-primary: #EBEAE3;
+  --bg-secondary: #D7D6CF;
+  --bg-card: #F5F4EF;
+  --text-primary: #000000;
+  --text-secondary: #8D8C88;
+  --accent-gold: #F4BB40;
+  --accent-red: #C46849;
+  --border-color: #000000;
+  --border-light: #C0BFB8;
+  --font-serif: 'Crimson Pro', 'Noto Serif SC', Georgia, serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* === Base Layout === */
+.slidev-layout {
+  background: var(--bg-primary) !important;
+  font-family: var(--font-serif);
+  padding: 2rem 3rem;
+}
+
+/* === Typography === */
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  color: var(--text-primary);
+}
+
+h1 { font-size: 3rem; letter-spacing: -2px; line-height: 1.1; }
+h2 { font-size: 1.75rem; letter-spacing: -1px; }
+h3 { font-size: 1.25rem; }
+
+p {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+li {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  padding: 0.25rem 0;
+}
+
+/* === Blockquote === */
+blockquote {
+  border-left: 3px solid var(--text-primary) !important;
+  padding: 0.75rem 1.25rem !important;
+  margin: 1rem 0 !important;
+  font-family: var(--font-serif) !important;
+  font-style: italic !important;
+  font-size: 1.1rem !important;
+  background: var(--bg-card) !important;
+  color: var(--text-primary) !important;
+}
+
+blockquote p {
+  font-family: var(--font-serif) !important;
+  color: var(--text-primary) !important;
+  font-size: 1rem !important;
+}
+
+blockquote strong {
+  background: var(--accent-gold) !important;
+  padding: 0 4px !important;
+  font-style: normal !important;
+}
+
+/* === Code - Inline === */
+code:not(pre code),
+p code, li code, span code,
+.slidev-layout code:not(pre code) {
+  font-family: var(--font-mono) !important;
+  background: var(--bg-secondary) !important;
+  padding: 0.15em 0.4em !important;
+  font-size: 0.85em !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-light) !important;
+  border-radius: 2px !important;
+}
+
+/* === Code - Block === */
+pre {
+  background: #1e1e2e !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 0 !important;
+  padding: 1rem !important;
+  margin: 1rem 0 !important;
+  overflow-x: auto !important;
+}
+
+pre code {
+  background: transparent !important;
+  padding: 0 !important;
+  font-size: 0.8rem !important;
+  line-height: 1.6 !important;
+  color: #d4d4d4 !important;
+  border: none !important;
+}
+
+.slidev-code, .shiki { background: #1e1e2e !important; }
+.slidev-code code, .shiki code { background: transparent !important; color: #d4d4d4 !important; }
+.shiki .line, .slidev-code .line, pre .line { color: #d4d4d4 !important; }
+.line.highlighted { background: rgba(255, 255, 255, 0.1) !important; }
+
+/* === Components === */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--text-primary);
+  padding: 1rem;
+}
+.card h3 { margin-bottom: 0.5rem; font-size: 1.1rem; }
+.card li { border-bottom: 1px solid var(--bg-secondary); padding: 0.35rem 0; font-size: 0.8rem; }
+.card li:last-child { border-bottom: none; }
+
+.btn {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  font-size: 0.875rem;
+}
+.btn:hover { background: var(--accent-gold); color: var(--text-primary); }
+
+/* === Tags === */
+.tag, .tag-gold, .tag-outline {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 0.2rem 0.4rem;
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: 0.5px;
+}
+.tag { background: var(--text-primary); color: var(--bg-primary); }
+.tag-gold { background: var(--accent-gold); color: var(--text-primary); }
+.tag-outline { background: transparent; border: 1px solid var(--text-primary); color: var(--text-primary); }
+
+.highlight { background: var(--accent-gold); padding: 0 4px; }
+
+/* === Grid === */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.75rem; }
+
+/* === Links === */
+a { color: var(--text-primary); text-decoration: underline; text-underline-offset: 2px; }
+a:hover { background: var(--accent-gold); text-decoration: none; }
+
+/* === Timeline === */
+.timeline {
+  border-left: 2px solid var(--text-primary);
+  padding-left: 1.5rem;
+  margin-left: 0.5rem;
+}
+.timeline-item { position: relative; padding-bottom: 1rem; }
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -1.65rem;
+  top: 0.3rem;
+  width: 8px;
+  height: 8px;
+  background: var(--text-primary);
+  border-radius: 50%;
+}
+.timeline-company { font-family: var(--font-serif); font-size: 1.1rem; color: var(--text-primary); }
+.timeline-role { font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; }
+
+/* === Utilities === */
+.text-sm { font-size: 0.8rem; }
+.text-xs { font-size: 0.7rem; }
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.text-center { text-align: center; }
+.big-text { font-family: var(--font-serif); font-size: 2rem; line-height: 1.4; color: var(--text-primary); }
+sup { font-size: 0.6em; color: var(--text-secondary); }
+.warning { color: var(--accent-red); }
+
+/* === Animations === */
+.slidev-vclick-target { transition: all 0.4s ease; }
+.slidev-vclick-hidden { opacity: 0; transform: translateY(8px); }
