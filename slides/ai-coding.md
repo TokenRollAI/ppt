@@ -29,7 +29,8 @@ by DJJ
 </div>
 
 ---
-
+layout: center
+---
 # Attention
 
 <div class="mt-2">
@@ -42,13 +43,17 @@ by DJJ
 </div>
 
 ---
+layout: center
+---
 
 # 基座模型
 
-> ***至少到 2025 年年底, 我们应该认识到: <span class="highlight">基础模型进步带来的收益是最大的</span>***
 
-> ***在任何生产力场景下, 应该总是选择 <span class="highlight">SOTA 模型</span>***
+1. ***至少到 2025 年年底, 我们应该认识到: <span class="highlight">基础模型进步带来的收益是最大的</span>***
+2. ***在任何生产力场景下, 应该总是选择 <span class="highlight">SOTA 模型</span>***
 
+---
+layout: center
 ---
 
 # 基本性能要求
@@ -336,13 +341,13 @@ layout: section
 
 # 个人使用经验
 
-提升 AI Coding 质量的最有效方法
+提升 AI Coding 质量的有效方法
 
 ---
 
 # 核心原则
 
-> 提升 AI Coding 质量的最有效方法:
+> 提升 AI Coding 质量的核心:
 
 <div class="mt-2">
 
@@ -426,7 +431,7 @@ Always use xxx to do xxx
 
 <div class="mt-2">
 
-> 不是 "Chat More" 而是 **"先调查, 再规划, 再写代码"**
+> 不仅仅是 "Chat More" 而是 **"先调查, 再规划, 再写代码"**
 
 <div class="grid-2 mt-2">
 <div>
