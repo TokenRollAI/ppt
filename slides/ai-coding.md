@@ -84,8 +84,8 @@ layout: section
 
 # 主流的模型
 
-- 美国: Anthropic / OpenAI / Google Gemin
-- 中国: Qwen / GLM / Kimi / MiniMax / DeepSeek
+- 美国: Anthropic / OpenAI / Google Gemini
+- 中国: *Qwen* / GLM / Kimi / MiniMax / DeepSeek
 
 ---
 
