@@ -11,7 +11,8 @@
   --bg-secondary: #D7D6CF;
   --bg-card: #F5F4EF;
   --text-primary: #000000;
-  --text-secondary: #212121;
+  --text-secondary: #292727;
+  --text-muted: #8D8C88;
   --accent-gold: #F4BB40;
   --accent-red: #C46849;
   --border-color: #000000;
@@ -182,12 +183,13 @@ a:hover { background: var(--accent-gold); text-decoration: none; }
 /* === Utilities === */
 .text-sm { font-size: 0.8rem; }
 .text-xs { font-size: 0.7rem; }
+.text-muted { color: var(--text-muted); }
 .mt-1 { margin-top: 0.5rem; }
 .mt-2 { margin-top: 1rem; }
 .mt-3 { margin-top: 1.5rem; }
 .text-center { text-align: center; }
 .big-text { font-family: var(--font-serif); font-size: 2rem; line-height: 1.4; color: var(--text-primary); }
-sup { font-size: 0.6em; color: var(--text-secondary); }
+sup { font-size: 0.6em; color: var(--text-muted); }
 .warning { color: var(--accent-red); }
 
 /* === Animations === */

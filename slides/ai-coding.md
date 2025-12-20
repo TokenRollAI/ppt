@@ -62,8 +62,6 @@ routerMode: hash
 <div class="grid-2 mt-2">
 <div>
 
-### 核心指标
-
 - **上下文**: 128K+ (最好 200K) Token
 - **输出速度**: 60 Token/s
 - **智力水平**: [SWE-Bench](https://www.swebench.com/) 70%+ (With Thinking)
@@ -71,7 +69,6 @@ routerMode: hash
 </div>
 <div>
 
-### 其他特性
 
 - ToolUse / Function Call
 - Prompt Cache
@@ -87,9 +84,8 @@ layout: section
 
 # 主流的模型
 
-美国: Anthropic / OpenAI / Google Gemini
-
-中国: Qwen / GLM / Kimi / MiniMax / DeepSeek
+- 美国: Anthropic / OpenAI / Google Gemin
+- 中国: Qwen / GLM / Kimi / MiniMax / DeepSeek
 
 ---
 
