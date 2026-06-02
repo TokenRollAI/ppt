@@ -519,8 +519,7 @@ layout: section
 
 # Folo
 
-<div class="grid-2 mt-3">
-<div>
+<div class="mt-3">
 
 [folo.is](https://folo.is/)
 
@@ -533,16 +532,6 @@ layout: section
 - 高质量个人 Blog
 - Repo 更新
 - 产品更新
-
-</div>
-</div>
-<div class="card">
-
-### 推荐关注
-
-暂时无法在飞书文档外展示此内容。
-
-<p>先从官方信源和你真正关心的产品开始订阅。</p>
 
 </div>
 </div>
